@@ -6,7 +6,7 @@ public class Main {
 
         int line;
         Scanner in = new Scanner(System.in);
-        System.out.print("Would you like to convert Fahrenheit to Celcius(1) or to Kelven(2): " );
+        System.out.print("Would you like to convert Fahrenheit to Celsius(1) or to Kelvin(2): " );
         line = in.nextInt();
 
         //this is F to C
@@ -14,17 +14,18 @@ public class Main {
 
             double math;
             Scanner up = new Scanner(System.in);
-            System.out.print("Eneter in a value to convert to Celcius: " );
+            System.out.print("Enter in a value to convert to Celsius: " );
             math = up.nextDouble();
-            System.out.println( math + " in Celcius is " + (math - 32)* 5/9);
+
+            System.out.printf( math + "F in Celsius is " + (Math.round(math - 32)* 5/9));
         }
 
         else if (line == 2) {
             double math2;
             Scanner down = new Scanner(System.in);
-            System.out.println("Enter in a value to convert Fehernheit to Kelvin: ");
+            System.out.println("Enter in a value to convert Fahrenheit to Kelvin: ");
             math2 = down.nextDouble();
-            System.out.println(math2 + "F" + " in Kelvin is " + (math2 - 32)* 5/9 +273.15);
+            System.out.println(math2 + "F" + " in Kelvin is " + (Math.round(math2 - 32)* 5/9 +273.15));
         }
 
         else  {
