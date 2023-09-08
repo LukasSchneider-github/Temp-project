@@ -19,6 +19,19 @@ public class Main {
             System.out.println( math + " in Celcius is " + (math - 32)* 5/9);
         }
 
+        else if (line == 2) {
+            double math2;
+            Scanner down = new Scanner(System.in);
+            System.out.println("Enter in a value to convert Fehernheit to Kelvin: ");
+            math2 = down.nextDouble();
+            System.out.println(math2 + "F" + " in Kelvin is " + (math2 - 32)* 5/9 +273.15);
+        }
+
+        else  {
+            System.out.println("Please choose valid number!");
+
+        }
+
 
 
     }
