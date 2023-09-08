@@ -1,20 +1,25 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
-
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
 
-        System.out.println("Give a number for me: ");
+        int line;
+        Scanner in = new Scanner(System.in);
+        System.out.print("Would you like to convert Fahrenheit to Celcius(1) or to Kelven(2): " );
+        line = in.nextInt();
 
+        //this is F to C
+        if (line == 1) {
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+            double math;
+            Scanner up = new Scanner(System.in);
+            System.out.print("Eneter in a value to convert to Celcius: " );
+            math = up.nextDouble();
+            System.out.println( math + " in Celcius is " + (math - 32)* 5/9);
         }
+
+
+
     }
 }
