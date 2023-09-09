@@ -38,4 +38,8 @@ public class Main {
 
 
     }
+
+    static void printNames(String name1, String name2) {
+        System.out.println(name1 + " and " + name2);
+    }
 }
